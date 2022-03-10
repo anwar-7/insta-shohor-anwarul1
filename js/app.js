@@ -16,7 +16,8 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
-  likedPostsId.plus(id);
+  // likedPostsId.plus(id);
+  likedPostsId.push(id);
   showPosts(posts);
 };
 
@@ -168,7 +169,7 @@ const displayReportedPosts = () => {
 
 const loadPosts = async () => {
   let data = await fetch('../data/posts.json');
-  // console.log(data);
+  console.log(data);
   posts = await data.json();
   showPosts(posts);
 };
