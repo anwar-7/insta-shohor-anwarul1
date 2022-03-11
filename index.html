@@ -101,7 +101,44 @@
         computer by node.js
       </p>
       <h3>What is the difference between local storage vs session storage?</h3>
-      <p>Ans:</p>
+      <p>Ans:<br />
+        <table class="table mt-xxl-2">
+          <thead>
+              <tr>
+                  <th scope="col">S/N</th>
+                  <th scope="col">LocalStorage</th>
+                  <th scope="col">SessionStorage</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th scope="row">1</th>
+                  <td>Used to store data over a lengthy period of time.</td>
+                  <td>Used to store data for a brief period of time.</td>
+              </tr>
+              <tr>
+                  <th scope="row">2</th>
+                  <td>It does not have a default expiry date.</td>
+                  <td>When you close a tab, the data is automatically deleted.</td>
+              </tr>
+              <tr>
+                  <th scope="row">3</th>
+                  <td>Changes are preserved and can be used again in the future.</td>
+                  <td>Only one tab can be changed at a time.</td>
+              </tr>
+              <tr>
+                  <th scope="row">4</th>
+                  <td>Local storage may hold up to 5MB of data.</td>
+                  <td>5MB to 10MB of data can be saved in a session.</td>
+              </tr>
+              <tr>
+                  <th scope="row">5</th>
+                  <td>This data does not disappear. It persists even after the browser has been restarted and the operating system has been rebooted.</td>
+                  <td>When the current browser tab is closed, it expires.</td>
+              </tr>
+          </tbody>
+      </table>
+      </p>
     </section>
     <footer></footer>
 
